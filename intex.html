@@ -1,8 +1,27 @@
 <!DOCTYPE html>
-<html>
-    <h1>js learning</h1>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS LEARNING</title>
+    <script>
+        function here(){
+        document.getElementById('inter').innerHTML=Date();
+        }
 
-    <body>
-        
- </body>
+
+    </script>
+</head>
+<body>
+    <!-- inline -->
+    <button onclick="document.getElementById ('demo').innerHTML='java script'">click here</button>
+    <p id="demo"></p>
+    <!-- internal -->
+     <button onclick="here()">enter</button>
+     <p id="inter"></p>
+    <!-- external -->
+     <button onclick="hello()">click me</button>
+     <p id="dem"></p>
+</body>
+<script src="intex.js"></script>
 </html>
