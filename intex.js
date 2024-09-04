@@ -33,3 +33,8 @@ function green(){
 red()
 yellow()
 green()
+
+// type
+
+console.log(typeof(true))
+console.log(typeof(false))
