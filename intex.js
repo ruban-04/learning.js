@@ -115,7 +115,7 @@ let vehicle= ["car", "bus", "bike", "van" ,"lorry"];
             console.log("true")
         }
         else{
-            console.log("false")
+            console.log("false") 
         }
         
         var result=90;
@@ -128,33 +128,12 @@ let vehicle= ["car", "bus", "bike", "van" ,"lorry"];
         }
         if(result>80){
             console.log("ijkl")
-        }
-    
+        } 
 
-    function checkEvenOrOdd(number) {
-        if ( number % 4==0) {
-            console.log("The number is even");
-        } else {
-            console.log("The number is odd");
-        }
-    }
-    checkEvenOrOdd("9")
-
-    function checkVowelsOrConsonant(char){ 
-        if (char === 'a'|| char === "e" || char === 'i' || char === "o" || char === 'u' ){
-            console.log("It's a vowel")
-        }
-        else{
-             console.log("It's a Consonant")
-        }
-    }
-    
-checkVowelsOrConsonant("m")
-
-// for loop
+        // for loop
 for(count=1;count<=20;count=count+1)
     {
-        console.log("agalya")
+        console.log("ruban")
     }
 
     for(count=1;count<=10;count=count+3)
@@ -174,3 +153,17 @@ for(count=1;count<=20;count=count+1)
                 {
                     console.log(count+"x2="+(count*2))
                 }
+                // for loop even number
+                for( let i=10;i<=20;i++)
+                    {
+                    if(i%3===0){
+                        console.log(i)
+                    }
+                    }
+
+                    for(var i=1;i<=10;i++)
+                        if(i%2==0){
+                            console.log(i)
+                        }
+    
+                     
