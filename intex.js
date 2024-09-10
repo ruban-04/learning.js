@@ -130,40 +130,76 @@ let vehicle= ["car", "bus", "bike", "van" ,"lorry"];
             console.log("ijkl")
         } 
 
-        // for loop
-for(count=1;count<=20;count=count+1)
-    {
-        console.log("ruban")
-    }
-
-    for(count=1;count<=10;count=count+3)
-        {
-            console.log(count)
-        }
-
-        // reverse
-
-        for(let count=15;count >= 1;count--)
+        // return function
+        function myState()
             {
-                console.log(count)
+                return ("tamil nadu")
+
             }
+            var a=myState()
+            console.log(a)
 
-            // tables
-            for(let count=1;count <= 10;count++)
-                {
-                    console.log(count+"x2="+(count*2))
-                }
-                // for loop even number
-                for( let i=10;i<=20;i++)
-                    {
-                    if(i%3===0){
-                        console.log(i)
-                    }
-                    }
+            function sub(a,b)
+            {
+                return (a-b)
+            }
+            let totalValue=sub(80,30)
+            console.log(totalValue)
 
-                    for(var i=1;i<=10;i++)
-                        if(i%2==0){
-                            console.log(i)
-                        }
-    
-                     
+            function fruits(apple,orange)
+            {
+                return (apple+orange)
+            }
+            var total=fruits(100,80)
+            console.log(total)
+        
+
+            var result=50
+if(result>60)
+{
+    console.log("pass")
+}
+else
+{
+    console.log("fail")
+}
+
+var score=60
+if(score>90)
+{
+    console.log("Agalya")
+}
+else if(score>=60)
+{
+    console.log("Ruban")
+}
+else if(score>10)
+{
+    console.log("Ams")
+} 
+
+function checkOddOrEven(number){
+    if(number % 3==0)
+    {
+        console.log("the number is odd")
+    }
+    else
+    {
+        console.log("the number is even")
+    }
+    }
+    checkOddOrEven("8")
+
+    function checkOddOrEven(char){
+        if(char === "a" || char === "e" || char === "i" || char === "o" || char === "u")
+        {
+        console.log("it is 4 vowel letter only")
+            
+        }
+        else
+        {
+            console.log("it is constant or number")
+        }
+        
+    }
+     checkOddOrEven("e")
