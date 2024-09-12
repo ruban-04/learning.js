@@ -207,7 +207,7 @@ function checkOddOrEven(number){
 
 // eligible or not eligible
 
-let name = "Bavya";
+let nameOne= "Bavya";
 let age = 18;
 
 if (age >= 18) {
@@ -243,4 +243,18 @@ for (count=1;count<=10;count=count+1)
                         }
 
 
-                     
+                        for (count=1;count<=10;count++)
+                            {
+                                console.log(count)
+                            }
+                            
+                             function reversedName(str)
+                            {
+                            var reversedName=""
+                            for(let i=str.length-1;i>=0;i--){
+                            reversedName += str[i]
+                            }
+                            return reversedName;
+                            }
+                            var name ="Ruban"
+                            console.log(reversedName(name))

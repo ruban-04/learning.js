@@ -11,6 +11,7 @@
 
 
     </script>
+ 
 </head>
 <body>
     <!-- inline -->
@@ -22,6 +23,25 @@
     <!-- external -->
      <button onclick="hello()">click me</button>
      <p id="dem"></p>
+
+     <p id="one">hello</p>
+
+     <script>
+       
+        var para = document.getElementById("one")
+        console.log(para.textContent)
+        para.textContent = "byee"
+
+     </script>
+
+     <h1 id="two">Hello World</h1>
+     <script>
+        var para = document.getElementById("two")
+        console.log(para.textContent)
+        para.textContent = "Byee World"
+     </script>
+
+
 </body>
 <script src="intex.js"></script>
 </html>
