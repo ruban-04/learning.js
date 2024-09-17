@@ -258,3 +258,11 @@ for (count=1;count<=10;count=count+1)
                             }
                             var name ="Ruban"
                             console.log(reversedName(name))
+
+                            //  function
+                             function birds(parrot,peacock)
+                            {
+                                return (parrot+peacock)
+                            }
+                            let totalvalue =birds(80,30)
+                            console.log(totalvalue)
