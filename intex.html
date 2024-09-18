@@ -7,9 +7,7 @@
     <script>
         function here(){
         document.getElementById('inter').innerHTML=Date();
-        }
-
-
+        };
     </script>
  
 </head>
@@ -89,9 +87,130 @@ function mouseOut(){
 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut nam autem dignissimos repellendus.</p>
 <button onclick="window.print()".innerHTML='print the page'>print the page </button>
 
+<p id="odd"></p>
+<script>
+let a =  79 ;
+a += 86 ;
+document.getElementById("odd").innerHTML = a;
+</script>
 
+<input id="num1">
+<input id="num2">
+<button onclick = "addintion()">add</button>
+<p id="result">result</p>
 
+<script>
+var box1=document.getElementById("num1")
+var box1=document.getElementById("num2")
 
+var box1=document.getElementById("result")
+var box1value = number(box1.value)
+var box1value = number(box2.value)
+let total = box1value+box2value
+result.textContent=total;
+</script>
+
+<p id="rate"></p>
+
+<script>
+let r = 100;
+let b = 50;
+let x = a + b;
+document.getElementById("rate").innerHTML = x;
+</script>
+
+<p id="type"></p>
+
+<script>
+let y = 16 + "Volvo";
+document.getElementById("type").innerHTML = x;
+</script>
+
+<p id="volvo"></p>
+<script>
+    let carName1 = "Volvo XC60"; // Double quotes
+    let carName2 = 'Volvo XC60'; // Single quotes
+    
+    document.getElementById("volvo").innerHTML =
+    carName1 + " " + carName2; 
+    </script>
+
+<p id="array"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+let fruit = fruits.at(2);
+
+document.getElementById("array").innerHTML = fruit;
+</script>
+
+<p id="arrow"></p>
+
+<script>
+let hello = "";
+
+hello = val => "Hello " + val;
+
+document.getElementById("arrow").innerHTML = hello("Universe!");
+</script>
+
+<p id="classes"></p>
+
+<script>
+class Car {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+  }
+}
+
+const myCar1 = new Car("Ford", 2014);
+const myCar2 = new Car("Audi", 2019);
+
+document.getElementById("classes").innerHTML =
+myCar1.name + " " + myCar2.name;
+</script>
+
+<h1>JavaScript Modules</h1>
+
+<p id="modules"></p>
+
+<script type="module">
+import { name, age } from "./person.js";
+
+let text = "My name is " + name + ", I am " + age + ".";
+
+document.getElementById("modules").innerHTML = text;
+</script>
+
+<p id="bool"></p>
+
+<script>
+let m = 0;
+document.getElementById("bool").innerHTML = Boolean(x = 0);
+</script>
+
+<input id="errors" type="text">
+<button type="button" onclick="myFunction()">Test Input</button>
+<p id="error"></p>
+
+<script>
+function myFunction() {
+  const message = document.getElementById("error");
+  message.innerHTML = "";
+  let x = document.getElementById("errors").value;
+  try {
+    if(x.trim() == "") throw "empty";
+    if(isNaN(x)) throw "not a number";
+    x = Number(x);
+    if(x < 5) throw "too low";
+    if(x > 10) throw "too high";
+  }
+  catch(err) {
+    message.innerHTML = "Input is " + err;
+  }
+}
+</script>
 
 </body>
 <script src="intex.js"></script>
