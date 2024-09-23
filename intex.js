@@ -266,3 +266,8 @@ for (count=1;count<=10;count=count+1)
                             }
                             let totalvalue =birds(80,30)
                             console.log(totalvalue)
+
+                            // split
+                            var animal = "This is a pet animal"
+                            console.log (animal.split(""))
+                            console.log (animal.split("  "))
