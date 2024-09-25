@@ -212,6 +212,59 @@ document.getElementById('demo5').innerHTML = text1.charAt(5);
     document.getElementById('demo7').innerHTML = text4 .charCodeAt(0);
 </script>
 
+<p id="demo8"></p>
+
+<script>
+
+    const name3 = {
+
+        name:"agal",
+        age:20,
+        fruits:{
+            fruit1 : "Apple",
+            fruit2 : "Orange",
+            fruit3 : "Graps"
+        }
+
+    }
+
+
+var f1 = "fruits"
+var f2 = "fruit3"
+document.getElementById('demo8').innerHTML = name3[f1][f2];
+
+</script>
+
+<p id="demo9"></p>
+
+<script>
+
+    let text5 =  " Please locate where 'locate' occurs!";
+    let index = text5.lastIndexOf("locate")
+    document.getElementById('demo9').innerHTML = index;
+
+</script>
+
+
+<p id="demo10"></p>
+
+<script>
+
+let text6 = "The rain in SPAIN stays mainly in the plain";
+const myArr = text6.match(/ain/gi);
+document.getElementById("demo10").innerHTML =  myArr;
+
+</script>
+
+<p id="demo11"></p>
+
+<script>
+
+var colors = ["green","red","yellow","orange"];
+colors[2] = "Blue";
+document.getElementById('demo11').innerHTML = colors;
+
+</script>
 
 </body>
 <script src="intex.js"></script>
